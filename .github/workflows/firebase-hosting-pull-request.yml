@@ -9,7 +9,6 @@ permissions:
   pull-requests: write
 env:
   VITE_CLIENT_ID: ${{ secrets.VITE_CLIENT_ID }}
-  REACT_APP_HELLO: hello
 jobs:
   build_and_preview:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}

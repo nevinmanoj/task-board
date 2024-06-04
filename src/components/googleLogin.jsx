@@ -9,7 +9,7 @@ export const GoogleLoginComponent = () => {
   if (!clientId) {
     clientId = "testing";
   }
-  console.log(import.meta.env.REACT_APP_HELLO);
+
   const onSuccess = (response) => {
     console.log(response);
     login(response);

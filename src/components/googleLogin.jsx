@@ -6,6 +6,10 @@ import { dataContext } from "../Providers/dataProvider";
 export const GoogleLoginComponent = () => {
   const { login } = useContext(dataContext);
   const clientId = import.meta.env.VITE_CLIENT_ID;
+  if (!clientId) {
+    clientId = "testing";
+  }
+  console.log(import.meta.env.REACT_APP_HELLO);
   const onSuccess = (response) => {
     console.log(response);
     login(response);

@@ -5,7 +5,7 @@ import { dataContext } from "../Providers/dataProvider";
 
 export const GoogleLoginComponent = () => {
   const { login } = useContext(dataContext);
-  const clientId = import.meta.env.VITE_CLIENT_ID;
+  var clientId = import.meta.env.VITE_CLIENT_ID;
   if (!clientId) {
     clientId = "testing";
   }

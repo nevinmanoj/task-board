@@ -37,7 +37,7 @@ export const Topbar = () => {
             Task Board
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} />
+          <Box sx={{ flexGrow: 1 }} />
 
           <Box sx={{ flexGrow: 0 }}>
             {jwtToken == null ? (

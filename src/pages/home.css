@@ -4,3 +4,10 @@
    height: 100vh;
    top: 0;
 }
+.tasks-outer{
+   position: fixed;
+   width: 96vw;
+   top: 100px;
+   display: flex;
+   margin: 0 auto;
+}

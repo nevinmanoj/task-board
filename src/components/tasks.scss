@@ -1,0 +1,30 @@
+.stack{
+    margin-left: 2vw;
+    
+}
+
+.stack:hover{
+      *::-webkit-scrollbar-thumb {
+        background: #636363;
+        border-radius: 5px;  
+      }
+}
+.stack-inner{
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80vh;
+   
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+.tasks-heading{
+    justify-content: space-between;
+    display: flex;
+}
+

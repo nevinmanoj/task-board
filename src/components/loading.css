@@ -1,0 +1,7 @@
+.test{
+    width: 300px;
+    position: fixed;
+    top: 40%; /* Position vertically at the center */
+    left: 50%; /* Position horizontally at the center (initial placement) */
+    transform: translateX(-50%);
+}

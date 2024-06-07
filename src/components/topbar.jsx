@@ -33,7 +33,13 @@ export const Topbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DashboardIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography variant="h6" noWrap>
+          <Typography
+            variant="h6"
+            noWrap
+            onClick={() => {
+              createTask({});
+            }}
+          >
             Task Board
           </Typography>
 

@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { dataContext } from "../Providers/dataProvider";
 
 export const Home = () => {
-  const { loading } = useContext(dataContext);
+  const { loading, jwtToken } = useContext(dataContext);
   return (
     <div className="outer">
       <Box sx={{ my: 4 }}>
@@ -19,11 +19,13 @@ export const Home = () => {
         {loading ? (
           <Loading />
         ) : (
-          <div className="tasks-outer">
-            <Tasks type={"To Do"} />
+          jwtToken && (
+            <div className="tasks-outer">
+              <Tasks type={"To Do"} />
 
-            <Tasks type={"Completed"} />
-          </div>
+              <Tasks type={"Completed"} />
+            </div>
+          )
         )}
       </Box>
     </div>

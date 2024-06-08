@@ -17,6 +17,9 @@
     overflow-y: auto;
     overflow-x: hidden;
     height: 80vh;
+    // border:1px solid rgb(61, 61, 61);
+    // border-radius: 5px;
+    // padding: 10px;
    
 }
 
@@ -24,6 +27,8 @@
     width: 5px;
 }
 .tasks-heading{
+    
+    height: 30px;
     justify-content: space-between;
     display: flex;
 }

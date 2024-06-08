@@ -14,22 +14,25 @@ export const Tasks = (props) => {
   );
   return (
     <Box sx={{ width: "100%" }} className="stack">
-      {data.length > 0 && (
+      {/* (props.type === "To Do" || data.length > 0) &&  */}
+      {
+        <div className="tasks-heading">
+          <Typography variant="h7" noWrap>
+            {props.type}
+          </Typography>
+          {props.type === "To Do" && <AddTask />}
+        </div>
+      }
+      {/* data.length > 0 && */}
+      {
         <>
-          <div className="tasks-heading">
-            <Typography variant="h7" noWrap>
-              {props.type}
-            </Typography>
-            {props.type === "To Do" && <AddTask />}
-          </div>
-
           <div className="stack-inner">
             {data.map((t, i) => (
               <Task type={props.type} task={t} />
             ))}
           </div>
         </>
-      )}
+      }
     </Box>
   );
 };
